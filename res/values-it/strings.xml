@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/*
+ * Wifi Connector
+ * 
+ * Copyright (c) 20101 Kevin Yuan (farproc@gmail.com)
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ * 
+ **/ 
+-->
+
+<resources>
+
+    <string name="toastFailed">Manqué!</string>
+    <string name="buttonOp">Plus...</string>
+    
+    <!-- Button label to connect to a wifi network-->
+    <string name="connect">Connetti</string>
+    <!--  !!!!!!!! vpn_connect_to Title of VPN connect dialog -->
+    <string name="wifi_connect_to">Connessione a %s</string>
+    <!-- Wi-Fi IP addrress label -->    
+    <string name="ip_address">Indirizzo IP</string>
+    <!-- Label for the signal strength -->
+    <string name="signal">Intensità segnale</string>
+    
+     <!-- Button caption to forget a wifi network -->
+    <string name="forget_network">Elimina</string>
+    <!-- Label for status of connection -->
+    <string name="wifi_status">Stato</string>
+    <!--Wi-Fi settings screen, summary text for network when connected -->
+    <string name="status_connected">Connesso</string>
+    <string name="status_connecting">Connessione...</string>
+    <!-- Label for link speed (wifi) -->
+    <string name="wifi_link_speed">Velocità</string>
+    <!-- Verbose wifi signal strength.  This is the best out of 4 levels. -->
+    <string name="wifi_signal_3">Eccellente</string>
+    <!-- Verbose wifi signal strength.  This is the 2nd best out of 4 levels. -->
+    <string name="wifi_signal_2">Buona</string>
+    <!-- Verbose wifi signal strength.  This is the 3rd best out of 4 levels. -->
+    <string name="wifi_signal_1">Discreta</string>
+    <!-- Verbose wifi signal strength.  This is the worst out of 4 levels. -->
+    <string name="wifi_signal_0">Scarsa</string>
+    <!-- Label for the security of a wifi network -->
+    <string name="security">Protezione</string>
+    <!-- Value for the wifi security.  This means no encryption. -->
+    <string name="wifi_security_open">Apri</string>
+
+    <string name="please_type_passphrase">Password wireless</string>
+    <string name="please_type_hex_key">Chiave esadecimale WEP (0-9, A-F)</string>
+    <string name="wifi_show_password">"Mostra password.</string>
+    
+    <string name="wifi_change_password">Cambia password</string>
+    <string name="button_change_password">Cambia\npassword</string>
+    <!-- An edit field's grayed out value when it has not been modified -->
+    <string name="wifi_password_unchanged">(invariato)</string>
+    <!-- Button caption to save a configuration wifi -->
+    <string name="wifi_save_config">Salva</string>
+</resources>
