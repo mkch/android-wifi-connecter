@@ -31,6 +31,7 @@ import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.widget.Toast;
 
 public class MainActivity extends Floating {
 	
@@ -57,8 +58,17 @@ public class MainActivity extends Floating {
 		doNewIntent(getIntent());
 	}
 
+	private boolean isAdHoc(final ScanResult scanResule) {
+		return scanResule.capabilities.indexOf("IBSS") != -1;
+	}
+	
 	private void doNewIntent(final Intent intent) {
 		mScanResult = intent.getParcelableExtra(EXTRA_HOTSPOT);
+		
+		if(isAdHoc(mScanResult)) {
+			Toast.makeText(this, R.string.adhoc_not_supported_yet, Toast.LENGTH_LONG).show();
+			finish();
+		}
 		
 		final String security = Wifi.getScanResultSecurity(mScanResult);
 		final WifiConfiguration config = Wifi.getWifiConfiguration(mWifiManager, mScanResult, security);

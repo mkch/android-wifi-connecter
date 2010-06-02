@@ -85,4 +85,6 @@
     <string name="wifi_password_unchanged">(unchanged)</string>
     <!-- Button caption to save a configuration wifi -->
     <string name="wifi_save_config">Save</string>
+    
+    <string name="adhoc_not_supported_yet">AdHoc is not supported by Android platform yet!</string>
 </resources>

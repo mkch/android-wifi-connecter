@@ -73,4 +73,6 @@
     <string name="wifi_password_unchanged">（未更改）</string>
     <!-- Button caption to save a configuration wifi -->
     <string name="wifi_save_config">保存</string>
+    
+	<string name="adhoc_not_supported_yet">Android 平臺目前不支援連接到 AdHoc！</string>
 </resources>
