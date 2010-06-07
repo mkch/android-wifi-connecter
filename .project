@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>WifiConnector</name>
+	<name>WifiConnecter</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -34,7 +34,7 @@
 		<link>
 			<name>BugReporterInterface</name>
 			<type>2</type>
-			<location>F:/eclipse_ws/BugReporter/src/BugReporter/Interface</location>
+			<locationURI>BugReporterInterface</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
