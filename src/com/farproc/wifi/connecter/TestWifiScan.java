@@ -132,7 +132,7 @@ public class TestWifiScan extends ListActivity {
 				long id) {
 			final ScanResult result = mScanResults.get(position);
 			
-			final Intent intent = new Intent("com.farproc.android.wificonnecter");
+			final Intent intent = new Intent("com.farproc.wifi.connecter.action.CONNECT_OR_EDIT");
 			intent.putExtra(MainActivity.EXTRA_HOTSPOT, result);
 			
 			startActivity(intent);
