@@ -72,7 +72,7 @@
 	
     <uses-sdk 
     	android:minSdkVersion="3" 
-    	android:targetSdkVersion="8"/>
+    	android:targetSdkVersion="10"/>
 
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
 	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
