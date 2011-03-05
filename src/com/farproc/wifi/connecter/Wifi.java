@@ -256,6 +256,9 @@ public class Wifi {
 		}
 		
 		final List<WifiConfiguration> configurations = wifiMgr.getConfiguredNetworks();
+		if(configurations == null) {
+			return null;
+		}
 
 		for(final WifiConfiguration config : configurations) {
 			if(config.SSID == null || !ssid.equals(config.SSID)) {

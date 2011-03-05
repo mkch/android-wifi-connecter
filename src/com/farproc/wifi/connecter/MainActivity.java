@@ -65,9 +65,16 @@ public class MainActivity extends Floating {
 	private void doNewIntent(final Intent intent) {
 		mScanResult = intent.getParcelableExtra(EXTRA_HOTSPOT);
 		
+		if(mScanResult == null) {
+			Toast.makeText(this, "No data in Intent!", Toast.LENGTH_LONG).show();
+			finish();
+			return;
+		}
+		
 		if(isAdHoc(mScanResult)) {
 			Toast.makeText(this, R.string.adhoc_not_supported_yet, Toast.LENGTH_LONG).show();
 			finish();
+			return;
 		}
 		
 		final String security = Wifi.getScanResultSecurity(mScanResult);
