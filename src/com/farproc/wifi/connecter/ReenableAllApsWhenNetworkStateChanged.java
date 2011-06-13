@@ -45,8 +45,10 @@ public class ReenableAllApsWhenNetworkStateChanged {
 	private static void reenableAllAps(final Context ctx) {
 		final WifiManager wifiMgr = (WifiManager)ctx.getSystemService(Context.WIFI_SERVICE);
 		final List<WifiConfiguration> configurations = wifiMgr.getConfiguredNetworks();
-		for(final WifiConfiguration config:configurations) {
-			wifiMgr.enableNetwork(config.networkId, false);
+		if(configurations != null) {
+			for(final WifiConfiguration config:configurations) {
+				wifiMgr.enableNetwork(config.networkId, false);
+			}
 		}
 	}
 	
