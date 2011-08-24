@@ -96,7 +96,14 @@ public class Wifi {
 		config.BSSID = scanResult.BSSID;
 		setupSecurity(config, security, password);
 		
-		int id = wifiMgr.addNetwork(config);
+		int id = -1;
+		try {
+			wifiMgr.addNetwork(config);
+		} catch(NullPointerException e) {
+			Log.e(TAG, "Weird!! Really!! What's wrong??", e);
+			// Weird!! Really!!
+			// This exception is reported by user to Android Developer Console(https://market.android.com/publish/Home)
+		}
 		if(id == -1) {
 			return false;
 		}
