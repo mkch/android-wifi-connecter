@@ -27,11 +27,14 @@ package com.farproc.wifi.connecter;
 
 import java.util.List;
 
+import android.app.Activity;
 import android.app.ListActivity;
+import android.content.ActivityNotFoundException;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.net.Uri;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
@@ -39,6 +42,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.Toast;
 import android.widget.TwoLineListItem;
 import android.widget.AdapterView.OnItemClickListener;
 
@@ -63,7 +67,6 @@ public class TestWifiScan extends ListActivity {
 	public void onResume() {
 		super.onResume();
 		final IntentFilter filter = new IntentFilter(WifiManager.SCAN_RESULTS_AVAILABLE_ACTION);
-		filter.addAction(WifiManager.NETWORK_STATE_CHANGED_ACTION);
 		registerReceiver(mReceiver, filter);
 		mWifiManager.startScan();
 	}
@@ -72,7 +75,6 @@ public class TestWifiScan extends ListActivity {
 	public void onPause() {
 		super.onPause();
 		unregisterReceiver(mReceiver);
-		sendBroadcast(new Intent("com.farproc.android.wificonnecter.ON_PAUSE"));
 	}
 	
 	private BroadcastReceiver mReceiver = new BroadcastReceiver() {
@@ -85,8 +87,6 @@ public class TestWifiScan extends ListActivity {
 				mListAdapter.notifyDataSetChanged();
 				
 				mWifiManager.startScan();
-			} else if(action.equals(WifiManager.NETWORK_STATE_CHANGED_ACTION)) {
-				sendBroadcast(new Intent("com.farproc.android.wificonnecter.ON_NETWORK_STATE_CHANGED"));
 			}
 			
 		}
@@ -131,12 +131,44 @@ public class TestWifiScan extends ListActivity {
 		public void onItemClick(AdapterView<?> parent, View view, int position,
 				long id) {
 			final ScanResult result = mScanResults.get(position);
-			
-			final Intent intent = new Intent("com.farproc.wifi.connecter.action.CONNECT_OR_EDIT");
-			intent.putExtra(MainActivity.EXTRA_HOTSPOT, result);
-			
-			startActivity(intent);
+			launchWifiConnecter(TestWifiScan.this, result);
 		}
 	};
 	
+	/**
+	 * Try to launch Wifi Connecter with {@link #hostspot}. Prompt user to download if Wifi Connecter is not installed.
+	 * @param activity
+	 * @param hotspot
+	 */
+	private static void launchWifiConnecter(final Activity activity, final ScanResult hotspot) {
+		final Intent intent = new Intent("com.farproc.wifi.connecter.action.CONNECT_OR_EDIT");
+		intent.putExtra("com.farproc.wifi.connecter.extra.HOTSPOT", hotspot);
+		try {
+			activity.startActivity(intent);
+		} catch(ActivityNotFoundException e) {
+			// Wifi Connecter Library is not installed.
+			Toast.makeText(activity, "Wifi Connecter is not installed.", Toast.LENGTH_LONG).show();
+			downloadWifiConnecter(activity);
+		}
+	}
+
+	private static void downloadWifiConnecter(final Activity activity) {
+		Intent downloadIntent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("market://details?id=com.farproc.wifi.connecter"));
+		try {
+			activity.startActivity(downloadIntent);
+			Toast.makeText(activity, "Please install this app.", Toast.LENGTH_LONG).show();
+		} catch (ActivityNotFoundException e) {
+			// Market app is not available in this device.
+			// Show download page of this project.
+			try {
+				downloadIntent.setData(Uri.parse("http://code.google.com/p/android-wifi-connecter/downloads/list"));
+				activity.startActivity(downloadIntent);
+				Toast.makeText(activity, "Please download the apk and install it manully.", Toast.LENGTH_LONG).show();
+			} catch  (ActivityNotFoundException e2) {
+				// Even the Browser app is not available!!!!!
+				// Show a error message!
+				Toast.makeText(activity, "Fatel error! No web browser app in your device!!!", Toast.LENGTH_LONG).show();
+			}
+		}
+	}
 }
