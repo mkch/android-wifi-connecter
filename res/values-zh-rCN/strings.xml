@@ -64,7 +64,6 @@
     <string name="wifi_security_open">开放</string>
     
     <string name="please_type_passphrase">密码</string>
-    <string name="please_type_hex_key">WEP 密钥（0-9、A-F）</string>
     <string name="wifi_show_password">显示密码。</string>
     
     <string name="wifi_change_password">修改密码</string>

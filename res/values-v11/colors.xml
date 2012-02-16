@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+	<color name="title_text">#6396f7</color>
+	<color name="buttons_view_bk">@android:color/transparent</color>
+	<color name="content_bk">@android:color/transparent</color>
+
+</resources>

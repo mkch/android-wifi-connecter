@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!--
 /*
  * Wifi Connector
@@ -28,65 +27,52 @@
 -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    >
+    android:orientation="vertical" >
 
-	<LinearLayout android:id="@+id/TitieView"
-		android:orientation="horizontal"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:padding="10sp">
-		
-		<ImageView
-			android:src="@drawable/ic_dialog_menu_generic"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"/>
-			
-	    <TextView android:id="@+id/title"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:paddingLeft="10sp"
-	    	android:textSize="20sp"
-	    	android:textColor="@android:color/white"
-	    	/>    
-	    	
-	   
-    	
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_view" />
+
+    <ScrollView
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/content_bk" >
+    </ScrollView>
+
+    <include layout="@layout/buttons_view_divider"/>
+    
+    <LinearLayout
+        android:id="@+id/buttons_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttons_view_bk"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5sp" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        
     </LinearLayout>
-    
-    <ScrollView android:id="@+id/content"
-    	android:background="#FFFFFF"
-    	android:layout_width="fill_parent"
-    	android:layout_height="wrap_content"
-    	android:layout_weight="1">
-	    
-	</ScrollView>
-    
-    <LinearLayout android:id="@+id/buttons_view"
-    	android:background="@android:color/darker_gray"
-		android:orientation="horizontal"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:gravity="center_vertical"
-		android:padding="5sp">
-    	
-	    <Button android:id="@+id/button1"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="1"/>
-	    
-	    <Button android:id="@+id/button2"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="1"/>
-	    	
-	   <Button android:id="@+id/button3"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="1"/>
-	    	
-	</LinearLayout>
 
 </LinearLayout>

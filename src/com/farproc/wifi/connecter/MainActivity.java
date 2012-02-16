@@ -83,11 +83,13 @@ public class MainActivity extends Floating {
 		if(config == null) {
 			mContent = new NewNetworkContent(this, mWifiManager, mScanResult);
 		} else {
+			final boolean isCurrentNetwork_ConfigurationStatus = config.status == WifiConfiguration.Status.CURRENT;
 			final WifiInfo info = mWifiManager.getConnectionInfo();
-			if(config.status == WifiConfiguration.Status.CURRENT
-					&& info != null
-					&& info.getSSID() != null) {
-			mContent = new CurrentNetworkContent(this, mWifiManager, mScanResult);
+			final boolean isCurrentNetwork_WifiInfo = info != null 
+				&& android.text.TextUtils.equals(info.getSSID(), mScanResult.SSID)
+				&& android.text.TextUtils.equals(info.getBSSID(), mScanResult.BSSID);
+			if(isCurrentNetwork_ConfigurationStatus || isCurrentNetwork_WifiInfo) {
+				mContent = new CurrentNetworkContent(this, mWifiManager, mScanResult);
 			} else {
 				mContent = new ConfiguredNetworkContent(this, mWifiManager, mScanResult);
 			}

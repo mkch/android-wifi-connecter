@@ -98,7 +98,7 @@ public class Wifi {
 		
 		int id = -1;
 		try {
-			wifiMgr.addNetwork(config);
+			id = wifiMgr.addNetwork(config);
 		} catch(NullPointerException e) {
 			Log.e(TAG, "Weird!! Really!! What's wrong??", e);
 			// Weird!! Really!!
@@ -320,8 +320,12 @@ public class Wifi {
             // For open, we don't set group ciphers.
             // For WEP, we specifically only set WEP40 and WEP104, so CCMP
             // and TKIP should not be there.
-            if (!wifiConfig.allowedGroupCiphers.get(GroupCipher.CCMP)
-                    && (wifiConfig.allowedGroupCiphers.get(GroupCipher.WEP40)
+        	
+        	// TODO: More work needed!!
+        	// Comment out the first condition to be compatible with Android 4.0(? Maybe 3.0??)
+            if (//!wifiConfig.allowedGroupCiphers.get(GroupCipher.CCMP)
+                //    && 
+                    (wifiConfig.allowedGroupCiphers.get(GroupCipher.WEP40)
                             || wifiConfig.allowedGroupCiphers.get(GroupCipher.WEP104))) {
                 return WEP;
             } else {

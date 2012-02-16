@@ -29,15 +29,21 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.farproc.wifi.connecter"
-      android:versionCode="10"
-      android:versionName="1.0.7"
+      android:versionCode="11"
+      android:versionName="1.0.8"
       android:installLocation="auto">
+      
+    <uses-sdk 
+    	android:minSdkVersion="3" 
+    	android:targetSdkVersion="14"/>
+
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
       
     <application android:icon="@drawable/icon" 
     	android:label="@string/app_name" 
     	android:name="MyApplication">
     	
-<!--
         <activity android:name=".TestWifiScan">
         
             <intent-filter>
@@ -46,10 +52,9 @@
             </intent-filter>
             
         </activity>
--->
 
     <activity android:name="MainActivity"
-    	android:theme="@android:style/Theme.Dialog" 
+    	android:theme="@style/PlatformDialog" 
     	android:launchMode="singleInstance" 
     	android:excludeFromRecents="true" 
     	android:noHistory="true">
@@ -69,12 +74,5 @@
 	<service android:name="ReenableAllApsWhenNetworkStateChanged$BackgroundService"/>
 	
 </application>
-	
-    <uses-sdk 
-    	android:minSdkVersion="3" 
-    	android:targetSdkVersion="10"/>
-
-	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
-	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
 	
 </manifest> 

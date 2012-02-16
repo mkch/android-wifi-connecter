@@ -51,8 +51,6 @@ public class NewNetworkContent extends BaseContent {
 		if(mScanResultSecurity.equals(Wifi.OPEN)) {
 			mIsOpenNetwork = true;
 			mView.findViewById(R.id.Password).setVisibility(View.GONE);
-		} else if(mScanResultSecurity.equals(Wifi.WEP)) {
-			((TextView)mView.findViewById(R.id.Password_TextView)).setText(R.string.please_type_hex_key);
 		} else {
 			((TextView)mView.findViewById(R.id.Password_TextView)).setText(R.string.please_type_passphrase);
 		}

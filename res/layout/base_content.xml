@@ -40,14 +40,14 @@
 		android:layout_height="wrap_content">
 		
 		<TextView
-			style="?android:attr/textAppearanceSmallInverse"
+			style="@style/textAppearanceBaseContent"
 			android:text="@string/wifi_status"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			/>
 		
 		<TextView android:id="@+id/Status_TextView"
-			style="?android:attr/textAppearanceSmallInverse"
+			style="@style/textAppearanceBaseContent"
 			android:text="@string/status_connected"
 			android:paddingLeft = "5sp"
 			android:textStyle="bold"
@@ -63,14 +63,14 @@
 		android:layout_height="wrap_content">
 		
 		<TextView
-			style="?android:attr/textAppearanceSmallInverse"
+			style="@style/textAppearanceBaseContent"
 			android:text="@string/wifi_link_speed"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			/>
 		
 		<TextView android:id="@+id/LinkSpeed_TextView"
-			style="?android:attr/textAppearanceSmallInverse"
+			style="@style/textAppearanceBaseContent"
 			android:text="54Mbps"
 			android:paddingLeft = "5sp"
 			android:textStyle="bold"
@@ -86,14 +86,14 @@
 		android:layout_height="wrap_content">
 		
 		<TextView
-			style="?android:attr/textAppearanceSmallInverse"
+			style="@style/textAppearanceBaseContent"
 			android:text="@string/signal"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			/>
 		
 		<TextView android:id="@+id/SignalStrength_TextView"
-			style="?android:attr/textAppearanceSmallInverse"
+			style="@style/textAppearanceBaseContent"
 			android:text="Poor"
 			android:paddingLeft = "5sp"
 			android:textStyle="bold"
@@ -109,14 +109,14 @@
 		android:layout_height="wrap_content">
 		
 		<TextView
-			style="?android:attr/textAppearanceSmallInverse"
+			style="@style/textAppearanceBaseContent"
 			android:text="@string/security"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			/>
 		
 		<TextView android:id="@+id/Security_TextView"
-			style="?android:attr/textAppearanceSmallInverse"
+			style="@style/textAppearanceBaseContent"
 			android:text="WEP"
 			android:paddingLeft = "5sp"
 			android:textStyle="bold"
@@ -132,14 +132,14 @@
 		android:layout_height="wrap_content">
 		
 		<TextView
-			style="?android:attr/textAppearanceSmallInverse"
+			style="@style/textAppearanceBaseContent"
 			android:text="@string/ip_address"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			/>
 		
 		<TextView android:id="@+id/IPAddress_TextView"
-			style="?android:attr/textAppearanceSmallInverse"
+			style="@style/textAppearanceBaseContent"
 			android:text="192.168.0.1"
 			android:paddingLeft = "5sp"
 			android:textStyle="bold"
@@ -155,8 +155,8 @@
 		android:layout_height="wrap_content">
 		
 		<TextView android:id="@+id/Password_TextView"
-			style="?android:attr/textAppearanceSmallInverse"
-			android:text="@string/please_type_hex_key"
+			style="@style/textAppearanceBaseContent"
+			android:text="@string/please_type_passphrase"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:paddingTop="10sp"
@@ -168,7 +168,7 @@
 			android:inputType="text|textPassword"/>
 			
 		<CheckBox android:id="@+id/ShowPassword_CheckBox"
-			style="?android:attr/textAppearanceSmallInverse"
+			style="@style/textAppearanceBaseContent"
 			android:text="@string/wifi_show_password"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"/>

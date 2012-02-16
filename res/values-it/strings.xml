@@ -30,7 +30,7 @@
 <resources>
 
     <string name="toastFailed">Manqué!</string>
-    <string name="buttonOp">Plus...</string>
+    <string name="buttonOp">Plus&#8230;</string>
     
     <!-- Button label to connect to a wifi network-->
     <string name="connect">Connetti</string>
@@ -47,7 +47,7 @@
     <string name="wifi_status">Stato</string>
     <!--Wi-Fi settings screen, summary text for network when connected -->
     <string name="status_connected">Connesso</string>
-    <string name="status_connecting">Connessione...</string>
+    <string name="status_connecting">Connessione&#8230;</string>
     <!-- Label for link speed (wifi) -->
     <string name="wifi_link_speed">Velocità</string>
     <!-- Verbose wifi signal strength.  This is the best out of 4 levels. -->
@@ -64,11 +64,10 @@
     <string name="wifi_security_open">Apri</string>
 
     <string name="please_type_passphrase">Password wireless</string>
-    <string name="please_type_hex_key">Chiave esadecimale WEP (0-9, A-F)</string>
     <string name="wifi_show_password">"Mostra password.</string>
     
     <string name="wifi_change_password">Cambia password</string>
-    <string name="button_change_password">Cambia\npassword</string>
+    <string name="button_change_password">Password</string>
     <!-- An edit field's grayed out value when it has not been modified -->
     <string name="wifi_password_unchanged">(invariato)</string>
     <!-- Button caption to save a configuration wifi -->

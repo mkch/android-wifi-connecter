@@ -53,11 +53,7 @@ public class ChangePasswordContent extends BaseContent {
 		
 		mPasswordEditText = ((ChangingAwareEditText)mView.findViewById(R.id.Password_EditText));
 		
-		if(mScanResultSecurity.equals(Wifi.WEP)) {
-			((TextView)mView.findViewById(R.id.Password_TextView)).setText(R.string.please_type_hex_key);
-		} else {
-			((TextView)mView.findViewById(R.id.Password_TextView)).setText(R.string.please_type_passphrase);
-		}
+		((TextView)mView.findViewById(R.id.Password_TextView)).setText(R.string.please_type_passphrase);
 		
 		((EditText)mView.findViewById(R.id.Password_EditText)).setHint(R.string.wifi_password_unchanged);
 	}
