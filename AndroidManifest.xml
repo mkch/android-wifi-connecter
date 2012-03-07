@@ -29,8 +29,8 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.farproc.wifi.connecter"
-      android:versionCode="11"
-      android:versionName="1.0.8"
+      android:versionCode="12"
+      android:versionName="1.0.9"
       android:installLocation="auto">
       
     <uses-sdk 
@@ -53,7 +53,7 @@
             </intent-filter>
             
         </activity>
- -->
+-->
 
     <activity android:name="MainActivity"
     	android:theme="@style/PlatformDialog" 
