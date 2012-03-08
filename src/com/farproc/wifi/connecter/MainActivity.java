@@ -77,7 +77,7 @@ public class MainActivity extends Floating {
 			return;
 		}
 		
-		final String security = Wifi.getScanResultSecurity(mScanResult);
+		final String security = Wifi.ConfigSec.getScanResultSecurity(mScanResult);
 		final WifiConfiguration config = Wifi.getWifiConfiguration(mWifiManager, mScanResult, security);
 		
 		if(config == null) {

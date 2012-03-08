@@ -41,10 +41,11 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 
 public abstract class BaseContent implements Floating.Content, OnCheckedChangeListener {
 
-	protected WifiManager mWifiManager;
-	protected Floating mFloating;
-	protected ScanResult mScanResult;
-	protected String mScanResultSecurity;
+	protected final WifiManager mWifiManager;
+	protected final Floating mFloating;
+	protected final ScanResult mScanResult;
+	protected final String mScanResultSecurity;
+	protected final boolean mIsOpenNetwork ;
 	
 	protected int mNumOpenNetworksKept;
 	
@@ -70,11 +71,14 @@ public abstract class BaseContent implements Floating.Content, OnCheckedChangeLi
 		mWifiManager = wifiManager;
 		mFloating = floating;
 		mScanResult = scanResult;
-		mScanResultSecurity = Wifi.getScanResultSecurity(mScanResult);
+		mScanResultSecurity = Wifi.ConfigSec.getScanResultSecurity(mScanResult);
+		mIsOpenNetwork =  Wifi.ConfigSec.isOpenNetwork(mScanResultSecurity);
 		
 		mView = View.inflate(mFloating, R.layout.base_content, null);
 		((TextView)mView.findViewById(R.id.SignalStrength_TextView)).setText(SIGNAL_LEVEL[WifiManager.calculateSignalLevel(mScanResult.level, SIGNAL_LEVEL.length)]);
-		((TextView)mView.findViewById(R.id.Security_TextView)).setText(mScanResultSecurity);
+		final String rawSecurity = Wifi.ConfigSec.getDisplaySecirityString(mScanResult);
+		final String readableSecurity = Wifi.ConfigSec.isOpenNetwork(rawSecurity) ? mFloating.getString(R.string.wifi_security_open) : rawSecurity; 
+		((TextView)mView.findViewById(R.id.Security_TextView)).setText(readableSecurity);
 		((CheckBox)mView.findViewById(R.id.ShowPassword_CheckBox)).setOnCheckedChangeListener(this);
 		
 		mNumOpenNetworksKept =  Settings.Secure.getInt(floating.getContentResolver(),

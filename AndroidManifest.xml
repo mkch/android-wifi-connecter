@@ -29,8 +29,8 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.farproc.wifi.connecter"
-      android:versionCode="12"
-      android:versionName="1.0.9"
+      android:versionCode="13"
+      android:versionName="2.0"
       android:installLocation="auto">
       
     <uses-sdk 

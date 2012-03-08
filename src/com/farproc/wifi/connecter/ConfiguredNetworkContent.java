@@ -39,8 +39,6 @@ import android.view.View.OnClickListener;
 import android.widget.Toast;
 
 public class ConfiguredNetworkContent extends BaseContent {
-	
-	private boolean mOpen = false;
 
 	public ConfiguredNetworkContent(Floating floating, WifiManager wifiManager,
 			ScanResult scanResult) {
@@ -50,8 +48,6 @@ public class ConfiguredNetworkContent extends BaseContent {
 		mView.findViewById(R.id.Speed).setVisibility(View.GONE);
 		mView.findViewById(R.id.IPAddress).setVisibility(View.GONE);
 		mView.findViewById(R.id.Password).setVisibility(View.GONE);
-		
-		mOpen = mScanResultSecurity.equals(Wifi.OPEN);
 	}
 
 	@Override
@@ -65,7 +61,7 @@ public class ConfiguredNetworkContent extends BaseContent {
 		case 0:
 			return mConnectOnClick;
 		case 1:
-			if(mOpen) {
+			if(mIsOpenNetwork) {
 				return mForgetOnClick;
 			} else {
 				return mOpOnClick;
@@ -83,7 +79,7 @@ public class ConfiguredNetworkContent extends BaseContent {
 		case 0:
 			return mFloating.getString(R.string.connect);
 		case 1:
-			if(mOpen) {
+			if(mIsOpenNetwork) {
 				return mFloating.getString(R.string.forget_network);
 			} else {
 				return mFloating.getString(R.string.buttonOp);

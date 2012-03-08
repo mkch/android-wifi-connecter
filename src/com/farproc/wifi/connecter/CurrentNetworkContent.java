@@ -78,11 +78,17 @@ public class CurrentNetworkContent extends BaseContent {
 
 	@Override
 	public int getButtonCount() {
-		return 3;
+		// No Modify button for open network.
+		return mIsOpenNetwork ? 2 : 3;
 	}
 
 	@Override
 	public OnClickListener getButtonOnClickListener(int index) {
+		if(mIsOpenNetwork && index == 1) {
+			// No Modify button for open network.
+			// index 1 is Cancel(index 2).
+			return mOnClickListeners[2];
+		}
 		return mOnClickListeners[index];
 	}
 
@@ -92,6 +98,11 @@ public class CurrentNetworkContent extends BaseContent {
 		case 0:
 			return mFloating.getString(R.string.forget_network);
 		case 1:
+			if(mIsOpenNetwork) {
+				// No Modify button for open network.
+				// index 1 is Cancel.
+				return getCancelString();
+			}
 			return mFloating.getString(R.string.button_change_password);
 		case 2:
 			return getCancelString();

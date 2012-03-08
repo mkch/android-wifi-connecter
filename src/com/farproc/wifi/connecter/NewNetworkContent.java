@@ -48,7 +48,7 @@ public class NewNetworkContent extends BaseContent {
 		mView.findViewById(R.id.Status).setVisibility(View.GONE);
 		mView.findViewById(R.id.Speed).setVisibility(View.GONE);
 		mView.findViewById(R.id.IPAddress).setVisibility(View.GONE);
-		if(mScanResultSecurity.equals(Wifi.OPEN)) {
+		if(Wifi.ConfigSec.isOpenNetwork(mScanResultSecurity)) {
 			mIsOpenNetwork = true;
 			mView.findViewById(R.id.Password).setVisibility(View.GONE);
 		} else {
