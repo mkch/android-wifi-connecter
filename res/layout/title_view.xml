@@ -7,7 +7,6 @@
     android:drawableLeft="@drawable/ic_dialog_menu_generic"
     android:drawablePadding="5dp"
     android:gravity="center_vertical"
-    android:paddingLeft="10sp"
     android:textColor="@android:color/primary_text_dark"
     android:textSize="20sp"
     android:padding="10dp" />
