@@ -6,7 +6,6 @@ Sergey <spy_2008@list.ru>
 -->
 
 <resources>
-    <string name="app_name">Wifi Connecter Library</string>
     <string name="toastFailed">Ошибка!</string>
     <string name="buttonOp">Больше&#8230;</string>
     <string name="connect">Подключить</string>
