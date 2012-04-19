@@ -64,12 +64,9 @@ public class ReenableAllApsWhenNetworkStateChanged {
 				if(WifiManager.NETWORK_STATE_CHANGED_ACTION.equals(action)) {
 					final NetworkInfo networkInfo = intent.getParcelableExtra(WifiManager.EXTRA_NETWORK_INFO);
 					final NetworkInfo.DetailedState detailed = networkInfo.getDetailedState();
-					switch(detailed) {
-					case DISCONNECTED:
-					case DISCONNECTING:
-					case SCANNING:
-						return;
-					default:
+					if(detailed != NetworkInfo.DetailedState.DISCONNECTED
+							&& detailed != NetworkInfo.DetailedState.DISCONNECTING
+							&& detailed != NetworkInfo.DetailedState.SCANNING) {
 						if(!mReenabled) {
 							mReenabled = true;
 							reenableAllAps(context);
