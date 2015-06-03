@@ -229,6 +229,8 @@ public class Wifi {
 		}
 		return pri;
 	}
+	
+	private static final String BSSID_ANY = "any";
 
 	public static WifiConfiguration getWifiConfiguration(final WifiManager wifiMgr, final ScanResult hotsopt, String hotspotSecurity) {
 		final String ssid = convertToQuotedString(hotsopt.SSID);
@@ -254,7 +256,7 @@ public class Wifi {
 			if(config.SSID == null || !ssid.equals(config.SSID)) {
 				continue;
 			}
-			if(config.BSSID == null || bssid.equals(config.BSSID)) {
+			if(config.BSSID == null || BSSID_ANY.equals(config.BSSID) ||  bssid.equals(config.BSSID)) {
 				final String configSecurity = ConfigSec.getWifiConfigurationSecurity(config);
 				if(hotspotSecurity.equals(configSecurity)) {
 					return config;
@@ -283,7 +285,7 @@ public class Wifi {
 			if(config.SSID == null || !ssid.equals(config.SSID)) {
 				continue;
 			}
-			if(config.BSSID == null || bssid == null || bssid.equals(config.BSSID)) {
+			if(config.BSSID == null || BSSID_ANY.equals(config.BSSID) || bssid == null || bssid.equals(config.BSSID)) {
 				final String configSecurity = ConfigSec.getWifiConfigurationSecurity(config);
 				if(security.equals(configSecurity)) {
 					return config;
