@@ -74,4 +74,5 @@
     <string name="wifi_save_config">保存</string>
     
 	<string name="adhoc_not_supported_yet">Android 平臺目前不支援連接到 AdHoc！</string>
+    <string name="toast_failed_config_not_created_by_me">失败！此网络配置可能不是由本程式创建的。</string>
 </resources>

@@ -25,15 +25,15 @@
 
 package com.farproc.wifi.connecter;
 
-import java.util.Comparator;
-import java.util.List;
-
 import android.content.Context;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
 import android.text.TextUtils;
 import android.util.Log;
+
+import java.util.Comparator;
+import java.util.List;
 
 public class Wifi {
 	
@@ -105,12 +105,12 @@ public class Wifi {
 	
 	/**
 	 * Connect to a configured network.
-	 * @param wifiManager
-	 * @param config
-	 * @param numOpenNetworksKept Settings.Secure.WIFI_NUM_OPEN_NETWORKS_KEPT
 	 * @return
 	 */
 	public static boolean connectToConfiguredNetwork(final Context ctx, final WifiManager wifiMgr, WifiConfiguration config, boolean reassociate) {
+        if(Version.SDK >= 23) {
+            return connectToConfiguredNetworkV23(ctx, wifiMgr, config, reassociate);
+        }
 		final String security = ConfigSec.getWifiConfigurationSecurity(config);
 		
 		int oldPri = config.priority;
@@ -163,6 +163,14 @@ public class Wifi {
 		
 		return true;
 	}
+
+    private static boolean connectToConfiguredNetworkV23(final Context ctx, final WifiManager wifiMgr, WifiConfiguration config, boolean reassociate) {
+        if(!wifiMgr.enableNetwork(config.networkId, true)) {
+            return false;
+        }
+
+        return reassociate ? wifiMgr.reassociate() : wifiMgr.reconnect();
+    }
 	
 	private static void sortByPriority(final List<WifiConfiguration> configurations) {
 		java.util.Collections.sort(configurations, new Comparator<WifiConfiguration>() {

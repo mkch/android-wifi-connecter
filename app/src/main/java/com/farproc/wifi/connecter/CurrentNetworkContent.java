@@ -25,8 +25,6 @@
 
 package com.farproc.wifi.connecter;
 
-import com.farproc.wifi.connecter.R;
-
 import android.net.NetworkInfo;
 import android.net.wifi.ScanResult;
 import android.net.wifi.SupplicantState;
@@ -34,9 +32,9 @@ import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.view.ContextMenu;
+import android.view.ContextMenu.ContextMenuInfo;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ContextMenu.ContextMenuInfo;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -127,7 +125,7 @@ public class CurrentNetworkContent extends BaseContent {
 					&& mWifiManager.saveConfiguration();
 			}
 			if(!result) {
-				Toast.makeText(mFloating, R.string.toastFailed, Toast.LENGTH_LONG).show();
+				Toast.makeText(mFloating, R.string.toast_failed_config_not_created_by_me, Toast.LENGTH_LONG).show();
 			}
 			
 			mFloating.finish();
