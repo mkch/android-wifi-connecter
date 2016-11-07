@@ -29,20 +29,20 @@
 
 <resources>
     <string name="app_name">Wifi Connecter Library</string>
-    
+
     <string name="toastFailed">Failed!</string>
     <string name="buttonOp">More&#8230;</string>
-    
+
     <!-- Button label to connect to a wifi network-->
     <string name="connect">Connect</string>
     <!--  !!!!!!!! vpn_connect_toTitle of VPN connect dialog -->
     <string name="wifi_connect_to">Connect to %s</string>
-    <!-- Wi-Fi IP address label -->    
+    <!-- Wi-Fi IP address label -->
     <string name="ip_address">IP address</string>
     <!-- Label for the signal strength -->
     <string name="signal">Signal strength</string>
-    
-     <!-- Button caption to forget a wifi network -->
+
+    <!-- Button caption to forget a wifi network -->
     <string name="forget_network">Forget</string>
     <!-- Label for status of connection -->
     <string name="wifi_status">Status</string>
@@ -74,18 +74,18 @@
     <!-- Value for the wifi security -->
     <string name="wifi_security_ieee8021x">IEEE8021X</string>
 
-    
+
     <string name="please_type_passphrase">Wireless password</string>
     <string name="wifi_show_password">Show password.</string>
-    
+
     <string name="wifi_change_password">Change password</string>
     <string name="button_change_password">Modify</string>
     <!-- An edit field's grayed out value when it has not been modified -->
     <string name="wifi_password_unchanged">(unchanged)</string>
     <!-- Button caption to save a configuration wifi -->
     <string name="wifi_save_config">Save</string>
-    
+
     <string name="adhoc_not_supported_yet">AdHoc is not supported by Android platform yet!</string>
-    
+
     <string name="dummy_content_description">""</string>
 </resources>
