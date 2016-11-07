@@ -25,20 +25,20 @@
 
 package com.farproc.wifi.connecter;
 
-import com.farproc.wifi.connecter.R;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 /**
  * A dialog-like floating activity
@@ -88,7 +88,7 @@ public class Floating extends Activity {
 		
 		final int btnCount = mContent.getButtonCount();
 		if(btnCount > BUTTONS.length) {
-			throw new RuntimeException(String.format("%d exceeds maximum button count: %d!", btnCount, BUTTONS.length));
+			throw new RuntimeException(String.format(Locale.US, "%d exceeds maximum button count: %d!", btnCount, BUTTONS.length));
 		}
 		findViewById(R.id.buttons_view).setVisibility(btnCount > 0 ? View.VISIBLE : View.GONE);
 		for(int buttonId:BUTTONS) {
