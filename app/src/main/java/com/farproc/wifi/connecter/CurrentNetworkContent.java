@@ -125,7 +125,7 @@ public class CurrentNetworkContent extends BaseContent {
 					&& mWifiManager.saveConfiguration();
 			}
 			if(!result) {
-				Toast.makeText(mFloating, R.string.toast_failed_config_not_created_by_me, Toast.LENGTH_LONG).show();
+				Toast.makeText(mFloating, R.string.toastFailed, Toast.LENGTH_LONG).show();
 			}
 			
 			mFloating.finish();

@@ -89,5 +89,4 @@
 
     <string name="dummy_content_description">""</string>
 
-    <string name="toast_failed_config_not_created_by_me">Failed! Maybe this configuration was not created by this app.</string>
 </resources>
