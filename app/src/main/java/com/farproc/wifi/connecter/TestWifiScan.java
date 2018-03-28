@@ -27,17 +27,27 @@ package com.farproc.wifi.connecter;
 
 import java.util.List;
 
+import android.Manifest;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.ActivityNotFoundException;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageManager;
+import android.location.LocationManager;
 import android.net.Uri;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -55,8 +65,15 @@ public class TestWifiScan extends ListActivity {
 	@Override
     public void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
-    	
-    	mWifiManager = (WifiManager)getSystemService(WIFI_SERVICE);
+
+		setLocationPermission();
+		if(permisionLocationOn())
+		{
+			checkLocationTurnOn();
+		}
+
+
+    	mWifiManager = (WifiManager)getApplicationContext().getSystemService(WIFI_SERVICE);
     	
     	setListAdapter(mListAdapter);
     	
@@ -171,4 +188,66 @@ public class TestWifiScan extends ListActivity {
 			}
 		}
 	}
+	public Boolean permisionLocationOn() {
+		boolean permissionGranted = ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED;
+		if (permissionGranted) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	public void setLocationPermission() {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && this.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+			//requestPermissions(new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION}, 1001);
+			ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, 1001);
+		}
+
+	}
+
+	@Override
+	public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+		super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+		switch (requestCode) {
+			case 1001: {
+				if (grantResults.length > 0
+						&& grantResults[0] == PackageManager.PERMISSION_GRANTED
+						&& (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
+						|| ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED)) {
+					//Start your service here
+				}
+			}
+		}
+	}
+
+	public Boolean checkLocationTurnOn(){
+		boolean onLocation=true;
+		boolean permissionGranted = ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED;
+		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && permissionGranted) {
+			LocationManager lm = (LocationManager)this.getSystemService(Context.LOCATION_SERVICE);
+			boolean gps_enabled = lm.isProviderEnabled(LocationManager.GPS_PROVIDER);
+			if(!gps_enabled){
+				onLocation =false;
+				AlertDialog.Builder dialog = new AlertDialog.Builder(new ContextThemeWrapper(this, R.style.PlatformDialog));
+				//android.support.v7.app.AlertDialog.Builder dialog = new android.support.v7.app.AlertDialog.Builder(this);
+				dialog.setMessage("Please turn on your location");
+				dialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface paramDialogInterface, int paramInt) {
+						Intent myIntent = new Intent( Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+						startActivity(myIntent);
+					}
+				});
+				dialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+
+					@Override
+					public void onClick(DialogInterface paramDialogInterface, int paramInt) {
+
+					}
+				});
+				dialog.show();
+			}
+		}
+		return onLocation;
+	}
 }
+

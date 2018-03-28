@@ -31,8 +31,11 @@
           xmlns:android="http://schemas.android.com/apk/res/android"
           android:installLocation="auto">
 
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
 
     <application
         android:icon="@drawable/icon"
@@ -42,10 +45,10 @@
         Step1: Uncomment the below <activity/> declaration.
         Step2: Run > Edit Configurations... > General > Launch Options > Launch:Specified Activity & Activity:com.farproc.wifi.connecter.TestWifiScan
         -->
-        <!--
+
         <activity android:name=".TestWifiScan"
             android:exported="true"/>
-        -->
+
 
         <activity
             android:name="MainActivity"
