@@ -1,0 +1,66 @@
+[
+    {
+        "outputFile": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 66,
+                    "endOffset": 117
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-v14\\colors.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 1,
+                        "startOffset": 62,
+                        "endColumn": 63,
+                        "endOffset": 124
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 122,
+                    "endColumn": 69,
+                    "endOffset": 187
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-v14\\styles.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 1,
+                        "startOffset": 58,
+                        "endColumn": 66,
+                        "endOffset": 123
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 192,
+                    "endLine": 6,
+                    "endColumn": 9,
+                    "endOffset": 359
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-v14\\styles.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 1,
+                        "startOffset": 126,
+                        "endLine": 7,
+                        "endColumn": 9,
+                        "endOffset": 296
+                    }
+                }
+            }
+        ]
+    }
+]

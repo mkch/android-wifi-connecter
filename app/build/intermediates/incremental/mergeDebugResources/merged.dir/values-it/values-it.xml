@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="adhoc_not_supported_yet">AdHoc non è supportato da piattaforma Android ancora!</string>
+    <string name="buttonOp">Plus…</string>
+    <string name="button_change_password">Password</string>
+    <string name="connect">Connetti</string>
+    <string name="forget_network">Elimina</string>
+    <string name="ip_address">Indirizzo IP</string>
+    <string name="please_type_passphrase">Password wireless</string>
+    <string name="security">Protezione</string>
+    <string name="signal">Intensità segnale</string>
+    <string name="status_connected">Connesso</string>
+    <string name="status_connecting">Connessione…</string>
+    <string name="toastFailed">Manqué!</string>
+    <string name="wifi_change_password">Cambia password</string>
+    <string name="wifi_connect_to">Connessione a %s</string>
+    <string name="wifi_link_speed">Velocità</string>
+    <string name="wifi_password_unchanged">(invariato)</string>
+    <string name="wifi_save_config">Salva</string>
+    <string name="wifi_security_open">Apri</string>
+    <string name="wifi_show_password">"Mostra password.</string>
+    <string name="wifi_signal_0">Scarsa</string>
+    <string name="wifi_signal_1">Discreta</string>
+    <string name="wifi_signal_2">Buona</string>
+    <string name="wifi_signal_3">Eccellente</string>
+    <string name="wifi_status">Stato</string>
+</resources>

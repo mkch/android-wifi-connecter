@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\merged\\debug\\layout\\title_view.xml",
+        "source": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\layout\\title_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\merged\\debug\\layout\\buttons_view_divider.xml",
+        "source": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\layout\\buttons_view_divider.xml"
+    },
+    {
+        "merged": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\merged\\debug\\layout\\base_content.xml",
+        "source": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\layout\\base_content.xml"
+    },
+    {
+        "merged": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\merged\\debug\\layout\\floating.xml",
+        "source": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\layout\\floating.xml"
+    }
+]

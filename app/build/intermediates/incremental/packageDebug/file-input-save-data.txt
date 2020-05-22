@@ -1,0 +1,36 @@
+#Internal package file, do not edit.
+#Fri May 22 09:19:00 BST 2020
+2.base=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_
+5.file=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v11\\title_view.xml
+5.set=ANDROID_RESOURCE
+3.base=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_
+6.file=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\base_content.xml
+2.set=ANDROID_RESOURCE
+10.set=ANDROID_RESOURCE
+10.file=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\buttons_view_divider.xml
+4.base=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_
+7.file=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+7.set=DEX
+count=11
+0.file=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\ic_dialog_menu_generic.png
+5.base=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_
+8.file=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
+4.set=ANDROID_RESOURCE
+6.base=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_
+1.file=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\icon.png
+9.set=ANDROID_RESOURCE
+9.file=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
+10.base=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_
+1.set=ANDROID_RESOURCE
+7.base=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+2.file=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\floating.xml
+6.set=ANDROID_RESOURCE
+0.base=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_
+8.base=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_
+3.file=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v11\\buttons_view_divider.xml
+3.set=ANDROID_RESOURCE
+1.base=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_
+9.base=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_
+4.file=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\title_view.xml
+8.set=ANDROID_RESOURCE
+0.set=ANDROID_RESOURCE
