@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="adhoc_not_supported_yet">AdHoc еще не поддерживается платформой Android!</string>
+    <string name="buttonOp">Больше…</string>
+    <string name="button_change_password">"Изменить пароль"</string>
+    <string name="connect">Подключить</string>
+    <string name="forget_network">Забыть</string>
+    <string name="ip_address">IP-адрес</string>
+    <string name="please_type_passphrase">Пароль беспроводной сети</string>
+    <string name="security">Безопасность</string>
+    <string name="signal">Сила сигнала</string>
+    <string name="status_connected">Подключено</string>
+    <string name="status_connecting">Подключение…</string>
+    <string name="toastFailed">Ошибка!</string>
+    <string name="wifi_change_password">Изменить пароль</string>
+    <string name="wifi_connect_to">Подключение к %s</string>
+    <string name="wifi_link_speed">Скорость</string>
+    <string name="wifi_password_unchanged">(без изменений)</string>
+    <string name="wifi_save_config">Сохранить</string>
+    <string name="wifi_security_ieee8021x">IEEE8021X</string>
+    <string name="wifi_security_open">Открыто</string>
+    <string name="wifi_security_wep">WEP</string>
+    <string name="wifi_security_wpa">WPA</string>
+    <string name="wifi_security_wpa2">WPA2</string>
+    <string name="wifi_security_wpa_eap">WPA-EAP</string>
+    <string name="wifi_show_password">Показывать пароль.</string>
+    <string name="wifi_signal_0">Плохая</string>
+    <string name="wifi_signal_1">Средняя</string>
+    <string name="wifi_signal_2">Хорошая</string>
+    <string name="wifi_signal_3">Отличная</string>
+    <string name="wifi_status">Статус</string>
+</resources>

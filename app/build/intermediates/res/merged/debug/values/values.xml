@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="buttons_view_bk">@android:color/darker_gray</color>
+    <color name="content_bk">@android:color/background_light</color>
+    <string name="adhoc_not_supported_yet">AdHoc is not supported by Android platform yet!</string>
+    <string name="app_name">Wifi Connecter Library</string>
+    <string name="buttonOp">More…</string>
+    <string name="button_change_password">Modify</string>
+    <string name="connect">Connect</string>
+    <string name="dummy_content_description">""</string>
+    <string name="forget_network">Forget</string>
+    <string name="ip_address">IP address</string>
+    <string name="please_type_passphrase">Wireless password</string>
+    <string name="security">Security</string>
+    <string name="signal">Signal strength</string>
+    <string name="status_connected">Connected</string>
+    <string name="status_connecting">Connecting…</string>
+    <string name="toastFailed">Failed!</string>
+    <string name="wifi_change_password">Change password</string>
+    <string name="wifi_connect_to">Connect to %s</string>
+    <string name="wifi_link_speed">Speed</string>
+    <string name="wifi_password_unchanged">(unchanged)</string>
+    <string name="wifi_save_config">Save</string>
+    <string name="wifi_security_ieee8021x">IEEE8021X</string>
+    <string name="wifi_security_open">Open</string>
+    <string name="wifi_security_wep">WEP</string>
+    <string name="wifi_security_wpa">WPA</string>
+    <string name="wifi_security_wpa2">WPA2</string>
+    <string name="wifi_security_wpa_eap">WPA-EAP</string>
+    <string name="wifi_show_password">Show password.</string>
+    <string name="wifi_signal_0">Poor</string>
+    <string name="wifi_signal_1">Fair</string>
+    <string name="wifi_signal_2">Good</string>
+    <string name="wifi_signal_3">Excellent</string>
+    <string name="wifi_status">Status</string>
+    <style name="PlatformDialog" parent="android:Theme.Dialog"/>
+    <style name="textAppearanceBaseContent" parent="@android:style/TextAppearance.Small.Inverse"/>
+</resources>

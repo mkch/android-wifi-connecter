@@ -1,0 +1,4 @@
+#Fri May 22 09:19:00 BST 2020
+base.0=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

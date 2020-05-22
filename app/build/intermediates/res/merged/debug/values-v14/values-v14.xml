@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_text">@android:color/holo_blue_dark</color>
+    <style name="PlatformDialog" parent="android:Theme.Holo.Dialog"/>
+    <style name="textAppearanceBaseContent" parent="@android:style/TextAppearance">
+	    <item name="android:textColor">@android:color/secondary_text_dark</item>
+	</style>
+</resources>

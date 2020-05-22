@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="adhoc_not_supported_yet">Android 平臺目前不支援連接到 AdHoc！</string>
+    <string name="buttonOp">更多……</string>
+    <string name="button_change_password">修改密碼</string>
+    <string name="connect">連接</string>
+    <string name="forget_network">清除</string>
+    <string name="ip_address">IP 地址</string>
+    <string name="please_type_passphrase">密碼</string>
+    <string name="security">安全性</string>
+    <string name="signal">信號強度</string>
+    <string name="status_connected">已連接</string>
+    <string name="status_connecting">正在連接……</string>
+    <string name="toastFailed">失敗！</string>
+    <string name="wifi_change_password">修改密碼</string>
+    <string name="wifi_connect_to">連接到 %s</string>
+    <string name="wifi_link_speed">速度</string>
+    <string name="wifi_password_unchanged">（未更改）</string>
+    <string name="wifi_save_config">保存</string>
+    <string name="wifi_security_open">開放</string>
+    <string name="wifi_show_password">顯示密碼。</string>
+    <string name="wifi_signal_0">弱</string>
+    <string name="wifi_signal_1">較弱</string>
+    <string name="wifi_signal_2">正常</string>
+    <string name="wifi_signal_3">最強</string>
+    <string name="wifi_status">狀態</string>
+</resources>

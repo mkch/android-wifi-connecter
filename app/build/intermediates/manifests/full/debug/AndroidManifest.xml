@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!--
 /*
  * Wifi Connector
@@ -26,20 +25,26 @@
  *
  **/
 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.farproc.wifi.connecter"
+    android:installLocation="auto"
+    android:versionCode="16"
+    android:versionName="2.0.3" >
 
-<manifest package="com.farproc.wifi.connecter"
-          xmlns:android="http://schemas.android.com/apk/res/android"
-          android:installLocation="auto">
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="14" />
 
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:icon="@drawable/icon"
-        android:label="@string/app_name">
+        android:label="@string/app_name" >
 
-        <!-- How to debug in Android Studio:
+        <!--
+        How to debug in Android Studio:
         Step1: Uncomment the below <activity/> declaration.
         Step2: Run > Edit Configurations... > General > Launch Options > Launch:Specified Activity & Activity:com.farproc.wifi.connecter.TestWifiScan
         -->
@@ -49,26 +54,22 @@
         -->
 
         <activity
-            android:name="MainActivity"
+            android:name="com.farproc.wifi.connecter.MainActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleInstance"
             android:noHistory="true"
-            android:theme="@style/PlatformDialog">
-
+            android:theme="@style/PlatformDialog" >
             <intent-filter>
-                <category android:name="android.intent.category.INFO"/>
+                <category android:name="android.intent.category.INFO" />
             </intent-filter>
-
             <intent-filter>
-                <action android:name="com.farproc.wifi.connecter.action.CONNECT_OR_EDIT"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+                <action android:name="com.farproc.wifi.connecter.action.CONNECT_OR_EDIT" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
-
-        <service android:name="ReenableAllApsWhenNetworkStateChanged$BackgroundService"/>
-
+        <service android:name="com.farproc.wifi.connecter.ReenableAllApsWhenNetworkStateChanged$BackgroundService" />
     </application>
 
 </manifest>

@@ -52,7 +52,6 @@ public class MainActivity extends Floating {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
 		mWifiManager = (WifiManager)getSystemService(WIFI_SERVICE);
 		
 		doNewIntent(getIntent());

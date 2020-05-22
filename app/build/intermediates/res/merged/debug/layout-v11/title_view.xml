@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+	<TextView
+	    android:id="@+id/title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="20dp"
+	    android:drawableBottom="@android:drawable/divider_horizontal_dark"
+	    android:textColor="@color/title_text"
+	    android:textSize="20sp"
+	    android:text="TP-LINK" />
+	
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="2dp"
+		android:background="@color/title_text"
+		android:contentDescription="@string/dummy_content_description"
+		android:scaleType="fitXY"/>
+
+</LinearLayout>

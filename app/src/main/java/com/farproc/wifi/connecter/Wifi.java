@@ -78,10 +78,12 @@ public class Wifi {
 		config.SSID = convertToQuotedString(scanResult.SSID);
 		config.BSSID = scanResult.BSSID;
 		ConfigSec.setupSecurity(config, security, password);
+		Log.e(TAG,"Connecting to ******************: " + config.SSID);
 		
 		int id = -1;
 		try {
 			id = wifiMgr.addNetwork(config);
+			Log.e(TAG, "Network added:**************" + id);
 		} catch(NullPointerException e) {
 			Log.e(TAG, "Weird!! Really!! What's wrong??", e);
 			// Weird!! Really!!
@@ -90,16 +92,19 @@ public class Wifi {
 		if(id == -1) {
 			return false;
 		}
-		
-		if(!wifiMgr.saveConfiguration()) {
-			return false;
-		}
-		
+
+		Log.e(TAG, "Saving config");
+//		if(!wifiMgr.saveConfiguration()) {
+//			return false;
+//		}
+
+		Log.e(TAG, "Getting config");
 		config = getWifiConfiguration(wifiMgr, config, security);
 		if(config == null) {
 			return false;
 		}
-		
+
+		Log.e(TAG, "Final connetcing ********");
 		return connectToConfiguredNetwork(ctx, wifiMgr, config, true);
 	}
 	

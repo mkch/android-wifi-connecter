@@ -1,0 +1,463 @@
+[
+    {
+        "outputFile": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rCN\\values-zh-rCN.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 77,
+                    "endOffset": 128
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 75,
+                        "startColumn": 4,
+                        "startOffset": 3424,
+                        "endColumn": 77,
+                        "endOffset": 3497
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 133,
+                    "endColumn": 41,
+                    "endOffset": 170
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 1313,
+                        "endColumn": 41,
+                        "endOffset": 1350
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 175,
+                    "endColumn": 55,
+                    "endOffset": 226
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 69,
+                        "startColumn": 4,
+                        "startOffset": 3118,
+                        "endColumn": 55,
+                        "endOffset": 3169
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 231,
+                    "endColumn": 38,
+                    "endOffset": 265
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1417,
+                        "endColumn": 38,
+                        "endOffset": 1451
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 270,
+                    "endColumn": 46,
+                    "endOffset": 312
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 4,
+                        "startOffset": 1809,
+                        "endColumn": 46,
+                        "endOffset": 1851
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 317,
+                    "endColumn": 44,
+                    "endOffset": 357
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 1617,
+                        "endColumn": 44,
+                        "endOffset": 1657
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 362,
+                    "endColumn": 53,
+                    "endOffset": 411
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 4,
+                        "startOffset": 2948,
+                        "endColumn": 53,
+                        "endOffset": 2997
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 416,
+                    "endColumn": 40,
+                    "endOffset": 452
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 4,
+                        "startOffset": 2779,
+                        "endColumn": 40,
+                        "endOffset": 2815
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 457,
+                    "endColumn": 39,
+                    "endOffset": 492
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 1707,
+                        "endColumn": 39,
+                        "endOffset": 1742
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 497,
+                    "endColumn": 48,
+                    "endOffset": 541
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 48,
+                        "startColumn": 4,
+                        "startOffset": 2022,
+                        "endColumn": 48,
+                        "endOffset": 2066
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 546,
+                    "endColumn": 52,
+                    "endOffset": 594
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 4,
+                        "startOffset": 2072,
+                        "endColumn": 52,
+                        "endOffset": 2120
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 599,
+                    "endColumn": 43,
+                    "endOffset": 638
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1268,
+                        "endColumn": 43,
+                        "endOffset": 1307
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 643,
+                    "endColumn": 53,
+                    "endOffset": 692
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 68,
+                        "startColumn": 4,
+                        "startOffset": 3063,
+                        "endColumn": 53,
+                        "endOffset": 3112
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 697,
+                    "endColumn": 50,
+                    "endOffset": 743
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 1523,
+                        "endColumn": 50,
+                        "endOffset": 1569
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 748,
+                    "endColumn": 46,
+                    "endOffset": 790
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 51,
+                        "startColumn": 4,
+                        "startOffset": 2168,
+                        "endColumn": 46,
+                        "endOffset": 2210
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 795,
+                    "endColumn": 57,
+                    "endOffset": 848
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 71,
+                        "startColumn": 4,
+                        "startOffset": 3252,
+                        "endColumn": 57,
+                        "endOffset": 3305
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 853,
+                    "endColumn": 47,
+                    "endOffset": 896
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 4,
+                        "startOffset": 3369,
+                        "endColumn": 47,
+                        "endOffset": 3412
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 901,
+                    "endColumn": 49,
+                    "endOffset": 946
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 4,
+                        "startOffset": 2891,
+                        "endColumn": 49,
+                        "endOffset": 2936
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 951,
+                    "endColumn": 52,
+                    "endOffset": 999
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 66,
+                        "startColumn": 4,
+                        "startOffset": 3003,
+                        "endColumn": 52,
+                        "endOffset": 3051
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1004,
+                    "endColumn": 43,
+                    "endOffset": 1043
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 59,
+                        "startColumn": 4,
+                        "startOffset": 2679,
+                        "endColumn": 43,
+                        "endOffset": 2718
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1048,
+                    "endColumn": 44,
+                    "endOffset": 1088
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 57,
+                        "startColumn": 4,
+                        "startOffset": 2553,
+                        "endColumn": 44,
+                        "endOffset": 2593
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1093,
+                    "endColumn": 44,
+                    "endOffset": 1133
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 55,
+                        "startColumn": 4,
+                        "startOffset": 2424,
+                        "endColumn": 44,
+                        "endOffset": 2464
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1138,
+                    "endColumn": 44,
+                    "endOffset": 1178
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 53,
+                        "startColumn": 4,
+                        "startOffset": 2295,
+                        "endColumn": 44,
+                        "endOffset": 2335
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1183,
+                    "endColumn": 42,
+                    "endOffset": 1221
+                },
+                "from": {
+                    "file": "C:\\Users\\Abhimanyu\\code\\fiddle\\android-wifi-connecter\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 4,
+                        "startOffset": 1902,
+                        "endColumn": 42,
+                        "endOffset": 1940
+                    }
+                }
+            }
+        ]
+    }
+]
